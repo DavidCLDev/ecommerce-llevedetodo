@@ -1,0 +1,667 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+TAS+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;;
+}
+
+.container_general{
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.degraded{
+    backdrop-filter: blur();
+}
+
+.container_general-principal{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_principal-uno{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container_principal-logo{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    margin-left: 80px;
+}
+
+.imagenes-logo{
+    width: 250px;
+    margin-top: -30px;
+}
+
+.container_principal-input{
+    width: 100%;
+    height: 40px;
+    max-width: 1000px;
+    max-height: 40px;
+    position: relative;
+    margin-top: 5px;
+    margin-left: -30px;
+}
+
+.input_barra-navegacion{
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid rgb(84, 82, 82);
+    padding: 10px 20px;
+    margin-left: 40px;
+}
+
+.container_input-search{
+    background-color: black;
+    width: 55px;
+    height: 35px;
+    border-radius: 30px;
+    top: 2px;
+    right: 4.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-imagen-search{
+    width: 50%;
+    object-fit: contain;
+}
+
+.container_principal-icons{
+    position: relative;
+    width: 40%;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.principal-icons-login{
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-login-letter{
+    display: flex;
+    padding: 3px 0;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.icons-login-letter h2{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.icons-login-letter p{
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.imagenes_container-logo{
+    width: 35px;
+}
+.cart{
+    width: 26px;
+}
+
+.principal-icons-cart{
+    display: flex;
+}
+
+.icons-cart-letter{
+    font-size: 8px;
+    display: flex;
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+
+.container_principal-dos{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_principal-nav{
+    width: 100%;
+    height: 100%;
+    max-width: 90%;
+    padding-bottom: 40px;
+}
+
+.container_principal-list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: center; 
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imagen-chevron{
+    width: 15px;
+}
+
+/*Hover de los li*/
+
+.container_principal-item,.item1{
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.container_principal-item:hover{
+    background-color: rgba(176, 173, 173, 0.116);
+    cursor: pointer;
+}
+
+.item1:hover{
+    background-color: rgba(176, 173, 173, 0.116);
+    cursor: pointer;
+}
+
+.slider{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    max-height: 300px;
+    max-width: 100%;
+    background-color: rgba(255, 132, 0, 0.818);
+    
+}
+
+.discount_general{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -30px;
+}
+.ofertas{
+    position: relative;
+    display: flex;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ofertas img{
+    width: 250px;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 30px;
+    background-size: cover;
+    border: 5px solid white;
+    overflow: hidden;
+    rotate: 10deg;
+
+}
+
+.ofertas_cuadro{
+    position: relative;
+}
+
+.buy_now{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -150px;
+    margin-top: 20px;
+}
+
+.buy_now-title{
+    color: white;
+    font-size: 30px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.ofertas_second{
+    position: relative;
+    display: flex;
+    gap: 5px;
+    width: 800px;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 10px;
+    
+}
+.img-ofer-second{
+    width: 250px;
+    height: 200px;
+
+}
+
+.audi{
+    width: 180px;
+    margin-left: -80px;
+}
+
+
+.container_productos{
+    width: 98%;
+    height: 100dvh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+
+.container_productos-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid rgba(194, 191, 191, 0.377);
+    transition: width 0.5s ease;
+}
+
+.container_productos-items:hover{
+    width: 110%;
+}
+
+.productos-info{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.img_productos{
+    width: 100%;
+}
+
+.h2-productos{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 350;
+}
+.h3-productos{
+    font-size: 22px;
+}
+
+.h4-productos{
+    font-size: 17px;
+    color: rgba(55, 55, 55, 0.601);
+    text-decoration: line-through;
+}
+
+.img-estrella{
+    width: 15px;
+}
+
+.puntuacion{
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.productos-des{
+    background-color: red;
+    width: 17%;
+    height: 25px;
+    color: white;
+    padding: 2px;
+    margin-top: 2px;
+
+}
+
+/*login*/
+
+
+
+.container_login{
+    width: 100%;
+    height: 100dvh;
+    margin: auto;
+    border: 1px solid black;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.33);
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    transition: opacity .7s
+    
+    ;
+}
+
+.modal-show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .7s;
+}
+
+.container_login-second{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    width: 42%;
+    height: 100%;
+    gap: 70px;
+    background-color: white;
+
+}
+
+.container_login-title{
+    margin-top: 40px;  
+}
+
+.container_login-title h1{
+    font-size: 24px;
+    color: black;
+    font-weight: 900;
+}
+
+.container_login-verificado{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.container_login-verificado p{
+    font-size: 12px;
+}
+.img_title-verificado{
+    width: 20px;
+}
+
+
+.container_login-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 35%;
+    gap: 10px;
+    margin-top: -20px;
+
+}
+
+.input-email{
+    height: 50px;
+    padding: 10px;
+    border: 0.1px solid rgba(151, 150, 150, 0.582);
+}
+
+.input-email::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.btn-login{
+    width: 100%;
+    height: 25%;
+    margin: 10px auto;
+    background-color: #FFB5BB;
+    border: none;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+
+
+}
+
+.trouble_login{
+    font-size: 15px;
+    margin: 0px auto;
+    color: gray;
+    text-decoration: underline;
+}
+
+
+
+.container_title-secondoption{
+    margin-top: -50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #848282de;
+    font-size: 14px;
+}
+
+.container_title-secondoption::before,.container_title-secondoption::after{
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.container_login-ingresoredes{
+    margin-top: -40px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_login-ingresoredes img{
+    width: 50px;
+}
+
+.location{
+    font-size: 13px;
+    color: #444141de;
+}
+
+#pais{
+    border: none;
+}
+
+.container_boton-cerrar{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 800px;
+}
+
+.img-letrax{
+    width: 15px;
+}
+
+#open-menu{
+    display: none;
+}
+
+
+.principal-icons-login-desplegable{
+    background-color: white;
+    box-shadow: 0px 0px 0.5px 0px #191919;
+    width: 280px;
+    height: 87dvh;
+    position: absolute;
+    top: 45px;
+    left: -60px;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.333);
+    border-radius: 5px;
+}
+
+.clip-path{
+    width: 20px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    top: -10px;
+    left: 130px;
+    position: absolute;
+    clip-path: polygon(100% 100%, 0 100%, 51% 0);
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.892);
+    z-index: -1;
+}
+
+.principal-icons-login-desplegable{
+    display: none;
+}
+
+
+.principal-icons-login:hover .principal-icons-login-desplegable{
+    display: block;
+}
+
+.login-desplegable-uno{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid rgba(41, 40, 40, 0.148);
+    padding-top: 15px;
+   
+}
+
+.login-desplegable-uno a{
+    width: 85%;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #191919;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-desplegable-uno h2{
+    color: gray;
+    font-size: 12px;
+    font-weight: 200px;
+}
+
+.login-desplegable-dos{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(41, 40, 40, 0.148);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login-desplegable-dos h3{
+    font-size: 16px;
+    color: #222;
+    font-weight: 400;
+}
+
+
+.login-desplegable-img{
+    width: 20px;
+
+}
+
+.login-desplegable-second{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-left: 10px;
+
+}
+
+.login-desplegable-second:hover{
+    background-color: rgba(255, 166, 0, 0.303);
+    cursor: pointer;
+}
+
+.login-desplegable-second h3:hover{
+    color: rgb(168, 85, 3);
+}
+
+.login-desplegable-tres{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.desplegable-tres-second{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    
+}
+
+.desplegable-tres-second h4{
+    height: 30px;
+    color: rgb(146, 146, 146);
+    font-weight: 350;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    
+}
+
+.desplegable-tres-second:hover{
+    background-color: rgba(255, 166, 0, 0.132);
+    cursor: pointer;
+}
+
+.desplegable-tres-second h4:hover{
+    color: rgb(168, 85, 3);
+}
+
+

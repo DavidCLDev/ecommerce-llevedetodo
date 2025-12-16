@@ -1,0 +1,245 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    }
+    .container_general{
+    width: 100dvw;
+    height: 100dvh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.degraded{
+    backdrop-filter: blur();
+}
+
+.container_general-principal{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_principal-uno{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.container_principal-logo{
+    width: 300px;
+    height: 100%;
+    position: relative;
+
+}
+
+.imagenes-logo{
+    width: 250px;
+    margin-top: -30px;
+    margin-left: 75px;
+}
+
+.container_principal-input{
+    width: 700px;
+    height: 40px;
+    max-width: 700px;
+    max-height: 40px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.input_barra-navegacion{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 1px solid rgb(84, 82, 82);
+    padding: 10px 20px;
+}
+
+.container_input-search{
+    background-color: black;
+    width: 55px;
+    height: 35px;
+    border-radius: 30px;
+    top: 2px;
+    right: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-imagen-search{
+    width: 50%;
+    object-fit: contain;
+}
+
+.container_principal-icons{
+    width: 150px;
+    margin-top: 5px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.imagenes_container-logo{
+    width: 40px;
+}
+
+.container_principal-dos{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_principal-nav{
+    width: 100%;
+    height: 100%;
+    max-width: 90%;
+    padding-bottom: 40px;
+}
+
+.container_principal-list{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: center; 
+}
+
+.item1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imagen-chevron{
+    width: 15px;
+}
+
+/*Hover de los li*/
+
+.container_principal-item,.item1{
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+.container_principal-item:hover{
+    background-color: rgba(176, 173, 173, 0.116);
+    cursor: pointer;
+}
+
+.item1:hover{
+    background-color: rgba(176, 173, 173, 0.116);
+    cursor: pointer;
+}
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .product-image {
+      flex: 1 1 50%;
+      padding: 20px;
+      text-align: center;
+      background-color: #fafafa;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product-details {
+      flex: 1 1 50%;
+      padding: 30px;
+    }
+
+    .product-details h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 24px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .actions {
+      display: flex;
+      gap: 15px;
+    }
+
+    .actions button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-cart {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .btn-cart:hover {
+      background-color: #0056b3;
+    }
+
+    .btn-buy {
+      background-color: #ffc107;
+      color: black;
+    }
+
+    .btn-buy:hover {
+      background-color: #e0a800;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .product-image, .product-details {
+        flex: 1 1 100%;
+      }
+    }
+
+    .bolso{
+        width: 100px;
+    }
