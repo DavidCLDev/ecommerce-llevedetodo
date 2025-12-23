@@ -1,4 +1,6 @@
-
+:root {
+    --primary-banner-color: orange;
+}
 
 * {
     margin: 0;
@@ -17,4 +19,22 @@ body {
 
 .shadow {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.333);
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.login-container {
+    height: 60%;
+    margin: auto;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.img-container {
+    height: 100%;
 }

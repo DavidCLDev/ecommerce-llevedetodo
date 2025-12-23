@@ -36,9 +36,9 @@ Aquí van elementos como:
 
 /* Logo del sitio web */
 
-.logo {
-    margin-left: 20px;
+.img-container {
     height: 80%;
+    margin-left: 20px;
 }
 
 /* Barra de navegación */
