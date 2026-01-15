@@ -1,0 +1,74 @@
+* {box-sizing: border-box;}
+
+body {display: grid;grid-template-rows: auto 1fr;}
+
+header {
+    background-color: var(--primary-banner-color);
+    display: flex;
+    height: 20vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid grey;
+    font-size: 15px;
+    height: 40px;
+    padding: 10px;
+}
+
+.main-section {display: flex;justify-content: center;}
+
+.form-container {
+    height: auto;
+    width: 32.125rem;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+.registrar {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    row-gap: 30px;
+}
+
+.logo-container {margin-left: 75px;}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    grid-column: auto / span 5;
+}
+
+.fieldset {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.full {
+    grid-column: col-start / span 12;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.full input {
+    width: 100%;
+}
+
+.submit-register {
+    grid-column: col-start 5 / span 4;
+    background-color: rgb(22, 152, 22);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 15px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.last-col {
+    grid-column: col-start 8 / span 5;
+}

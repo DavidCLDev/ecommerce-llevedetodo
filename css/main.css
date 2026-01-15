@@ -27,7 +27,12 @@ body {
     object-fit: contain;
 }
 
-.login-container {
+.logo-container {
+    display: block;
+    width: 300px;
+}
+
+.form-container {
     height: 60%;
     margin: auto;
     background-color: white;

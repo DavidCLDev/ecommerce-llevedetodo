@@ -7,7 +7,7 @@ El header está divido en dos secciones: .container-principal-uno y
 .container-principal-nav.
 */
 
-.nav-header {
+header {
     background-color: white;
     display: grid;
     height: 9.375rem;
