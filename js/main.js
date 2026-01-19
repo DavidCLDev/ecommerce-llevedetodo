@@ -1,12 +1,15 @@
-let widget = document.getElementById("menu-widget");
+let userMenu = document.getElementById("menu-widget");
+let wrapper = document.getElementById("wrapper");
+let timeout = undefined;
 
-function myFunction() {
-    widget.style.display = "block";
-}
 
-window.onclick = function(event) {
-    let container = document.getElementById("menu-container");
-    if (!event.target.matches(".submenu-container")) {
-        widget.style.display = "none";
-    }
-}
+wrapper.addEventListener("mouseenter", () => {
+    clearTimeout(timeout);
+    userMenu.classList.add("open-menu");
+});
+
+wrapper.addEventListener("mouseleave", () => {
+    timeout = setTimeout(()=> {
+        userMenu.classList.remove("open-menu");
+    }, 300);
+});

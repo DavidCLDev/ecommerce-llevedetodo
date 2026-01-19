@@ -88,7 +88,7 @@ Aquí van elementos como:
     height: 90%;
     border: none;
     background-color: white;
-    border-radius: 2.5rem;
+    border-radius: 1.2rem;
     cursor: pointer;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -108,6 +108,7 @@ Aquí van elementos como:
     align-items: center;
     position: relative;
     border: none;
+    border-radius: 2.5rem;
 }
 
 .icon {
@@ -124,8 +125,8 @@ Aquí van elementos como:
     position: absolute;
     top: 140%;
     left: 50%;
-    width: 300px;
-    border-radius: 10px;
+    width: 18.75rem;
+    border-radius: .625rem;
     height: 570px;
     transform: translateX(-50%);
     background-color: white;
@@ -134,10 +135,14 @@ Aquí van elementos como:
     z-index: 1;
 }
 
+.user-menu-widget.open-menu {
+    display: block;
+}
+
 .user-menu-widget::before {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     left: 47%;
     top: -5px;
     transform: rotate(45deg) translateX(-47%);
@@ -168,11 +173,10 @@ Aquí van elementos como:
 
 .sign-login-container, .submenu-container {
     box-sizing: border-box;
-    padding: 15px 0;
+    padding: .9375rem 0;
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-bottom: 1px solid #aaa;
 }
 
 .sign-login-container {
@@ -185,23 +189,21 @@ Aquí van elementos como:
 
 /* Botón de iniciar sesión */
 
-#login {
+.login {
+    display: block;
     background-color: black;
     text-decoration: none;
     color: white;
     font-size: 1.2em;
     border: none;
-    border-radius: 35px;
-    height: 60%;
-    width: 65%;
+    border-radius: 1.2rem;
+    padding: 18px;
     margin: 0 auto;
     cursor: pointer;
 }
 
-#login:hover {
-    font-size: 1.35em;
-    width: 75%;
-    height: 65%;
+.login:hover {
+    font-size: 1.45em;
 }
 
 /* Botón de registrarse */
